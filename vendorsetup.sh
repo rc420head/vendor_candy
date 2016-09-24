@@ -1,3 +1,3 @@
-. "$(gettop)/vendor/slim/build/envsetup.sh"
+. "$(gettop)/vendor/candy/build/envsetup.sh"
 
-slim_device_combos
+candy_device_combos
