@@ -85,10 +85,12 @@ PRODUCT_PACKAGES += \
 
 #    SlimFileManager removed until updated
 
-ifneq ($(DISABLE_SLIM_FRAMEWORK), true)
+### disable for now
+# ifneq ($(DISABLE_SLIM_FRAMEWORK), true)
 ## Slim Framework
-include frameworks/opt/slim/slim_framework.mk
-endif
+#include frameworks/opt/slim/slim_framework.mk
+# endif
+###
 
 ## Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
@@ -167,8 +169,8 @@ endif
 endif
 
 # Versioning System
-# Slim version.
-PRODUCT_VERSION_MAJOR = 7.0.0
+# Candy version.
+PRODUCT_VERSION_MAJOR = 7
 PRODUCT_VERSION_MINOR = build
 PRODUCT_VERSION_MAINTENANCE = 0.1
 ifdef CANDY_BUILD_EXTRA
